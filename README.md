@@ -6,6 +6,9 @@ Converts an image to the format used by ComputerCraft.
 
 Yes, I just wanted to make one myself :p.
 
+## What is main.py
+
+This is the converter! If you run it with `-a`, `--all`, or `all` on the command-line, it will convert all `.png` files in the directory to `.nfp`s!
 
 ## What is videoplayer.lua ?
 
@@ -18,3 +21,7 @@ Example command on how to do the above with `ffmpeg`: `ffmpeg -i my_video.mp4 -v
 ## What is videodownloader.lua
 
 The above `videoplayer.lua` allows you to playback a video from images, but how do you get said images onto a CC computer? Well, that's what `videodownloader.lua` is for! After converting using this converter, run `python -m http.server` inside the directory with your `.nfp`s, port forward port 8000 to your computer, and use `videodownloader.lua` to get them!
+
+## What is nfp_viewer.py
+
+Ever wanted to view `.nfp` files outside of CC? Well, here you go! It can display a singular image, or display them in video format, similarly to how `videoplayer.lua` does in-game (with some built in media controls!).
